@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+ 
+}
+header {
+ color: #E1E1E5;
+ display: flex;
+ justify-content: flex-end;
+ background-color: #607993;
+ height: 40px;
+ width: 100%;
+ position: fixed;
+}
+
+
+ul > li { 
+   float: left;
+   margin: 5px;
+   list-style-type: none;
+   font-size: 17px;
+}
+
+a {
+    color: #E1E1E5;
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: 14px 16px;
+}
+
+
+
+a:hover {
+    border-bottom: 4px solid white;
+}
+
+#About { 
+    background-color: #99C5D2;
+    padding: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+
+   
+}
+h1{
+    font-family: 'Metal Mania', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#About > p {
+    width: 50%;
+   font-size: 20px;
+   font-family: monospace;
+   line-height: 33px;
+
+}
+#avatar {
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+   
+}
+
+#Work {
+    background-color: #607993;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.articles-container {
+   display: flex;
+   flex-direction: row;
+   margin-top: 10px;
+   margin-left: 15px;
+   margin-right: 15px;
+   justify-content: space-around;
+}
+
+article {
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    box-shadow: 5px 5px 15px #000000;
+}
+
+.img {
+    border: 1px solid black;
+    height: 260px;
+}
+.title {
+    height: 50px;
+    padding: 5px;
+}
+
+article:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 2s;
+}
+.link_article{
+    color: wheat;}
+
+#Resume {
+   background-color: #F5F5F5;
+   height: 500px;
+  
+}
+.resume_container {
+    display: grid;
+    grid-template-columns: 300px 100px;
+    gap: 200px;
+    width: 900px;
+    margin: auto;
+  
+}
+.formation {
+    
+    padding-top: 50px;
+    background-color: #F0C419;
+    color: black;
+}
+
+.formation > ul > li {
+    list-style-type: square;
+    margin-left: 22px;
+}
+
+.skills {
+    width: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+h2{
+    font-size: 20px;
+   
+}
+progress::-webkit-progress-value { background: blue; }
+#formation_label {
+    margin-left: 5px;
+}
+footer {
+    background-color: #F0C419;
+}
+
+footer>#Contact > nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook_link {
+    background-color: #0077B5;
+    border-radius: 10px;
+}
+.github_link {
+    background-color: white;
+    border-radius: 10px;
+}
+.social_link:hover{
+      border-bottom: none;
+      transform: rotate(43deg);
+}
+.social_link {
+    margin: 5px;
+}
+form {
+    display: inline-block;
+    text-align: center;
+}
+.formulaire {
+    display: block;
+    text-align: center;
+}
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+input {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    color: gray;
+}
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: gray;
+}
+form > p >label {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-left: 4px;
+}
+form > p {
+    margin-top: 10px;
+}
+ button {
+    padding: 20px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #DEF019;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 2s;
+}
+.link_article:hover {
+    border-bottom: none;
+}
+input::placeholder {
+    color: gray;
+    font-size: 20px;
+}
+textarea::placeholder {
+    color: gray;
+    font-size: 20px;
+}
+@media screen and (max-width: 920px){
+   ul {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     
+   }
+   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       height: 140px;
+   }
+  .articles-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ 
+}
+article {
+    margin-top: 15px;
+}
+#About > p{
+    font-size: 15px;
+}
+#Resume {
+    height: auto;
+}
+.resume_container {
+    
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: left;
+}
+.formation {
+    width: 400px;
+    height: auto;
+}
+.skills {
+    width: 400px;
+}
+#formation_label {
+    text-align: center;
+}
+.formation > ul > li {
+   list-style-type: none;
+}
+
+
+}

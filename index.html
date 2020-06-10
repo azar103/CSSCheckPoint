@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>html check point</title>
+        <title>css check point</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
+
                     <li><a href="#">Home</a></li>
+ 
+
                     <li><a href="#About">About</a></li>
+                  
                     <li><a href="#Work">Work</a></li>
                     <li><a href="#Resume">Resume</a></li>
                     <li><a href="#Contact">Contact</a></li>
+         
                 </ul>
             </nav>
         </header>
         <main>
             <section id="About">
-                  <h1>Anis Zarrouk</h1>
-                  <p>Je suis un developpeur Informatique autodidacte, <br> Vous trouvez ici mes projets et je serais disponible bientot pour vous rendre service.</p>
-                  <img alt="my image" src="./res//img/avatar.jpg" /><br>
-                  <iframe  src="https://www.youtube.com/watch?v=FQlAEiCb8m0"
+                  <h1>About Me</h1>
+                  <img alt="my image" src="./res//img/avatar.jpg" id="avatar" /><br>
+                  <p>Je suis un developpeur FullStackJS autodidacte, <br> Vous trouvez ici mes projets et je serais disponible bientot pour vous rendre service.</p>
+               
+                <!---  <iframe  src="http://youtu.be/tnHlB8aQp3Y"
                      width="300"
-                     height="200"
-                  ></iframe>
+                     height="250"
+                     style="margin-bottom: 5px;"
+                  ></iframe>-->
             </section>
             <section id="Work"> 
                   <h1>My Projects</h1> 
-                  <article>Projet 1</article>
-                  <article>Projet 2</article>
-                  <article>Projet 3</article>
+                  <div class="articles-container">
+                    <article>
+                        <div class="img"  style="background-image: url('https://i.postimg.cc/gjTRCnzf/books.png');
+                        background-size: cover;"></div>
+                        <div class="title"                             
+                        >
+                           <a href="https://github.com/azar103/BooksForMe" 
+                           class="link_article"       
+                           target="_blank"> BooksForMe</a>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="img"  style="background-image: url('https://i.postimg.cc/nLF52hzv/myNews.png');
+                        background-size: cover;"></div>
+                        <div class="title"                             
+                        >
+                           <a href="https://github.com/azar103/MyNews-ReactNativeApp-" 
+                           class="link_article"       
+                           target="_blank"> MyNews</a>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="img"  style="background-image: url('https://i.postimg.cc/DZz9vw32/tma5mi5a.png');
+                        background-size: cover;"></div>
+                        <div class="title"                             
+                        >
+                           <a href="https://github.com/azar103/tma5mi5a" 
+                           class="link_article"       
+                           target="_blank"> tma5mi5a(En Cours...)</a>
+                        </div>
+                    </article>
+                  </div>
             </section>
             <section id="Resume">
-                  <h1>My Resume</h1>
-                  <h2>My skills</h2>
-                  <ul>
-                      <li>Html</li>
-                      <li>Css</li>
-                      <li>Javascript</li>
-                      <li>React js</li>
-                      <li>Angular</li>
-                      <li>php</li>
-                      <li>Mongo db</li>
-                      <li>Express js</li>
-                      <li>React Native</li>
-                  </ul>
-                  <h2>Formation</h2>
-                  <ul>
-                      <li type="square"><strong>2006-2010:</strong> Technicien supérieur(génie logiciel) à zarzouna</li>
-                      <li type="square"><strong>2010-2014:</strong> Ingénieur génie logiciel à ESPRIT</li>
-                      <li type="square"><strong>2014-2020:</strong> Openclassrooms et Freecodecamp</li>
-                      <li ><strong>2020 :</strong> GoMyCode</li>
-                  </ul>
-
+            
+                <h1>My Resume</h1>
+                <div class="resume_container">
+                  <div class="formation">
+                    <h2 id="formation_label">My Formation</h2>  
+                    <ul>
+                        <li>2010-2014: ESPRIT</li>
+                        <li>2020: GoMyCode(en cours...)</li>
+                    </ul>
+                 </div>
+                  <div class="skills">
+                    <h2>My Skills</h2>  
+                    <h3>Html/CSS</h3>    
+                    <progress max="100" value="92" style="width: 400px;"></progress>
+                    <h3>javaScript</h3>    
+                    <progress max="100" value="80" style=" width: 400px;"></progress>
+                    <h3>React js</h3>    
+                    <progress max="100" value="60" style="width: 400px;"></progress>
+                    <h3>React Native</h3>    
+                    <progress max="100" value="55" style=" width: 400px;"></progress>
+                 </div>
+                </div>  
             </section>
         </main>
         <footer>
@@ -61,22 +102,24 @@
             <h1>Contact Me</h1>
             <nav>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/anis-zarrouk-9750a599/" target="_blank">Linkedin</a></li>
-                    <li><a href="https://github.com/azar103?tab=repositories" target="_blank">Github</a></li>
+                    <a href="https://www.linkedin.com/in/anis-zarrouk-9750a599/" target="_blank" class="social_link facebook_link"><i class="fa fa-linkedin" style="font-size: 40px; color: white;"></i></a>
+                    <a href="https://github.com/azar103?tab=repositories" target="_blank" class="social_link github_link"><i class="fa fa-github" style="font-size: 40px; color: black;"></i></a>
+
                 </ul>
             </nav>
+            <div class="formulaire">
             <form action="#">
                 <p>
-                <label>Email</label> 
-                <input type="text"  placeholder="entrez l'email..."/>
-                </p>
-                
+                <label>Email</label> <br> 
+                <input type="email"  placeholder="entrez l'email..."/>
+                </p> 
                 <p>
-                <label>Message</label> 
-                <textarea cols="30" rows="4" ></textarea> 
+                <label>Message</label>  <br>
+                <textarea cols="60" rows="14" placeholder="entrez votre message..."></textarea> 
                </p>
                 <button type="submit">Submit</button>
            </form>
+        </div>
           </section>
         </footer>
 
