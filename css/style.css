@@ -241,6 +241,12 @@ textarea::placeholder {
     color: gray;
     font-size: 20px;
 }
+h3{
+    font-size: 15px;
+    color: #D76263;
+    font-weight: 800;
+
+}
 @media screen and (max-width: 920px){
    ul {
        display: flex;
