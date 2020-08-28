@@ -6,15 +6,21 @@
  
 }
 header {
- color: #E1E1E5;
+ color: #14143a;
  display: flex;
- justify-content: flex-end;
+ justify-content: space-between;
  background-color: #607993;
  height: 40px;
  width: 100%;
  position: fixed;
-}
 
+ 
+}
+#left {
+    color: #E1E1E5;
+    padding: 5px;
+    margin-left: 5px;
+}
 
 ul > li { 
    float: left;
@@ -38,7 +44,8 @@ a:hover {
 }
 
 #About { 
-    background-color: #99C5D2;
+    background-image: url('../res/img/mountain.jpg');
+    background-size: cover;
     padding: 50px;
     height: 500px;
     display: flex;
@@ -51,6 +58,7 @@ a:hover {
     font-size: 19px;
     font-weight: 600;
 
+
    
 }
 h1{
@@ -59,6 +67,10 @@ h1{
     text-align: center;
     margin-bottom: 30px;
     margin-top: 10px;
+
+}
+#About > h1 {
+    color: white;
 }
 
 #About > p {
@@ -66,6 +78,9 @@ h1{
    font-size: 20px;
    font-family: monospace;
    line-height: 33px;
+   color: white;
+   font-weight: 800;
+  
 
 }
 #avatar {
@@ -87,10 +102,13 @@ h1{
 .articles-container {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    margin-top: 10px;
    margin-left: 15px;
    margin-right: 15px;
    justify-content: space-around;
+   max-width: 900px;
+   margin: auto;
 }
 
 article {
@@ -98,6 +116,7 @@ article {
     width: 200px;
     height: 300px;
     box-shadow: 5px 5px 15px #000000;
+    margin-top: 15px;
 }
 
 .img {
@@ -118,7 +137,7 @@ article:hover {
     color: wheat;}
 
 #Resume {
-   background-color: #F5F5F5;
+
    height: 500px;
   
 }
